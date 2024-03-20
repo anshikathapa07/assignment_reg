@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body{
+            background-image: url(imagebg.webp);
+            background-repeat:  no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .mycard{
+            width: 30%;
+            height: 75%;
+            background: linear-gradient(45deg,pink,violet);
+            padding:20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50px;
+            
+         }
+
+         
+        .inp{
+            border: none;
+            border-bottom: 1.5px solid black;
+            border-right: 1.5px solid black;
+            border-radius: 20px;
+            background:linear-gradient(180deg,white,white);
+            color: black;
+        }
+        .inp::placeholder{
+            color:black;
+            font-size: 15px;
+        }
+        .lbl{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(18, 1, 1);
+            justify-content: left;
+        
+        }
+        .btn{
+            background-color: rgb(242, 16, 121);
+            width: 80px;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor:pointer;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .btn:hover{
+            background-color:rgb(70, 25, 194);
+            color:black;
+            font-size: 15px;
+
+         }
+    </style>
+    
+
+</head>
+<body>
+    <div class="mycard">
+       <u><b><h1 style="color: black; font-family:'Times New Roman', Times, serif;font-size: xx-large;">Registration form</h1></b></u>
+       <h2 style="color: darkred;font-size: larger; font-family: 'Times New Roman', Times, serif;"> Create your account here</h2>
+       <img src="login.png" alt="logo" width="30%" height="30%">
+        <form action="#" method="post">
+            <label class="lbl"  for="Full Name"> Full Name:</label>
+            <input class="inp" type="text" name="Full Name" placeholder=" Enter yor Full Name" style="margin-bottom: 10px; padding: 5px;width: 90%;">
+            <label  class="lbl" for="Username "> Username:</label>
+            <input class="inp" type="text" name="Username" placeholder="UserName"style="margin-bottom: 10px; padding: 5px;width: 90%;">
+            <label class="lbl" for="mobile number ">Mobile number:</label>
+            <input class="inp" type="number" name="Mobile number" placeholder="Enter your number "style="margin-bottom: 10px; padding: 5px;width: 90%;">
+             <label  class="lbl" for="Age"> Age:</label>
+            <input class="inp" type="number" name="age" placeholder="Enter your Age" style="margin-bottom: 10px; padding: 5px;width: 90%;">
+            <label class="lbl"  for="Enail"> Email:</label> 
+            <input class="inp" input="email" name="Email" placeholder="Email"style="margin-bottom: 10px; padding: 5px;width: 90%;">
+            <label class="lbl"  for="Password"> Password:</label>
+            <input class="inp" type="password" name="Password" placeholder="Password"style="margin-bottom: 10px; padding: 5px;width: 90%;">
+            <button class="btn"  type="submit" style="margin-top: 10px; width: 90%; font-style: normal;font-family:'Times New Roman', Times, serif;" >Register</button>
+         </form>
+    </div>
+</body>
+</html>
